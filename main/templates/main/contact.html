@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<h1>Contact Us</h1>
+<p>If you have any questions, feel free to reach out!</p>
+
+<!-- Simple contact form -->
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your email"><br><br>
+    
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea><br><br>
+    
+    <input type="submit" value="Send">
+</form>
+{% endblock %}
